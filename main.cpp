@@ -5,14 +5,14 @@ int main(int argc, char** argv) {
 <<<<<<< HEAD
     char* str = (char*)malloc(sizeof(char) * SIZE);
     printf("Введите своё имя:\n");
-    scanf("%s", str);
+    str = gets(str);
     printf("Привет, %s", str);
     free(str);
     return 0;
 =======
  char* str = (char*)malloc(sizeof(char) * SIZE);
  printf("Введите своё имя:\n");
- scanf("%s", str);
+ str = gets(str);
  printf("Привет, %s", str);
  return 0;
 >>>>>>> 26b27d5 (Initial commit)
