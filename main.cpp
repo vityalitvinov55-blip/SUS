@@ -5,6 +5,6 @@ int main(int argc, char** argv) {
     char* str = gets(str); malloc(sizeof(char) * SIZE);
     printf("Введите своё имя: \n");
     scanf("%s", str);
-    printf("Привет, %s", str);
-    return 0;
-}
+    str = gets(str);
+    puts("Привет");
+    puts(str);
