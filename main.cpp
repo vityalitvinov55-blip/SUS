@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #define SIZE 1024
 int main(int argc, char** argv) {
-    char* str = gets(str); malloc(sizeof(char) * SIZE);
-    printf("Введите своё имя: \n");
-    scanf("%s", str);
+    char* str = (char*)malloc(sizeof(char) * SIZE);
+    printf("Введите своё имя:\n");
+    str = gets(str);
     printf("Привет, %s", str);
+    free(str);
     return 0;
 }
